@@ -1,0 +1,95 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --light-gray-5: hsla(212, 45%, 89%, 0.25);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  margin: 10vh auto;
+  width: 325px;
+  border-radius: 15px;
+  text-align: center;
+}
+.container-card img {
+  border-radius: 15px 15px 0 0;
+}
+.container-inner {
+  padding: 30px 25px;
+  display: inherit;
+  flex-direction: inherit;
+  gap: 20px;
+}
+.container-inner h1 {
+  font-size: 1.4rem;
+}
+.container-inner p {
+  padding: 0 15px;
+  color: var(--gray-blue);
+}
+.container-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--light-gray-5);
+}
+/* .container-price img {
+  width: 10
+} */
+.container-price h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.container-price p {
+  margin: 0;
+  color: var(--gray-blue);
+}
+.container-price a {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
+}
+.container-button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.container-button button {
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+}
+.container-button button:first-of-type {
+  background-color: #382ae1;
+  color: var(--white);
+}
+.container-button button:last-of-type {
+  background-color: transparent;
+  color: var(--gray-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
